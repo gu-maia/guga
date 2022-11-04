@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<div class="max-w-[768px] mx-auto mt-20 prose">
+
+    {%- include header.html -%}
+
+    {%- include tabs.html -%}
+    <div class="mt-10">
+        <div class="">
+            <div class="">
+                {% for project in site.data.projects %}
+                <div class="p-3 rounded shadow mt-2">
+                    <a class="no-underline" href="{{ project.url }}">{{ project.title }}</a>
+                    <p>{{ project.description }}</p> <a href="https://taylantatli.github.io/Moon/moon-theme/"
+                        class="no-underline">Read More</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

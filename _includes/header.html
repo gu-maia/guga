@@ -1,0 +1,13 @@
+<section class="flex">
+    <img class="h-40 w-40" src="{{ site.guga.avatar_url }}">
+    <div class="my-auto pl-10">
+        <h3 class="text-2xl">{{ site.author }}</h3>
+        <p class="text-sm font-light text-slate-500">{{ site.description }}</p>
+        <div class="flex gap-2">
+            {%- assign username = site.guga.socials -%}
+
+            <a class="no-underline" href="https://twitter.com/{{ username.twitter }}">[Twitter]</a>
+            <a class="no-underline" href="https://github.com/{{ username.github }}">[Github]</a>
+        </div>
+    </div>
+</section>
